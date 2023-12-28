@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Filter Gallery</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    
+
+    .search-bar {
+      margin: 20px 106px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 16px;
+      
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    @media only screen and (min-width: 600px) {
+      .gallery img {
+        max-width: 200px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .gallery {
+        justify-content: space-between;
+      }
+    }
+    
+    a{
+        list-style: none;
+        text-decoration: none;
+    }
+    body{
+        background: #0E0F11;
+    }
+    .bar{
+        margin-left: 15px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Oswald:wght@300;400&display=swap');
+    .title{
+        margin-left: 31%;
+        font-size: 20px;
+        position: relative;
+        top: 2.4px;
+        font-family: 'Mukta', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        color: #FFFFFF;
+        
+    }
+    .sn{
+        color: #006AFF;
+    }
+    .search{
+        margin-left: 100px;
+    }
+    nav{
+        border-bottom: 2px #006AFF solid;
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+    
+        <header>
+            <nav>
+                <a class="bar" href="search.html"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></a>
+    
+                <a class="title" href="#">Aplio<span class="sn">TV</span></a>
+    
+                <a class="search" href="search.html"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i></a>
+            </nav>
+        </header>
+    
+    
+  <div class="search-bar">
+    <label for="searchInput"></label>
+    <input type="text" id="searchInput" oninput="filterImages()">
+  </div>
+  <div class="gallery" id="imageGallery">
+    <!-- Your images go here with unique IDs -->
+<a href="film.html"><img src="IMG_9176.jpeg" id="HUNGER GAMES : LA BALLADE DU SERPENT ET DE L'OISEAU CHANTEUR (2023) HD"></a>
+    
+<a href="film2.html"><img src="IMG_9177.jpeg" id="KILLERS OF THE FLOWER MOON (2023) HD"></a>
+
+<a href="film3.html"><img src="IMG_9178.jpeg" id="OPPENHEIMER (2023) HD"></a>
+    
+<a href="film4.html"><img src="IMG_9179.jpeg" id="THE CREATOR (2023) HD"></a>
+
+<a href="film5.html"><img src="IMG_9180.jpeg" id="FIVE NIGHTS AT FREDDY'S (2023) HD"></a>
+<a href="film6.html"><img src="IMG_9181.jpeg" id="RETRIBUTION (2023) HD"></a>
+    
+<a href="film7.html"><img src="IMG_9182.jpeg" id="EXPENDABLES 4 (2023) HD"></a>
+
+<a href="film8.html"><img src="IMG_9183.jpeg" id="97 MINUTES (2023) HD"></a>
+
+<a href="film9.html"><img src="IMG_9184.jpeg" id="LE MANOIR HANTÉ (2023) HD
+    "></a>
+    
+<a href="film10.html"><img src="IMG_9185.jpeg" id="EQUALIZER 3 (2023) HD"></a>
+
+<a href="film11.html"><img src="IMG_9186.jpeg" id="GRAN TURISMO (2023) HD"></a>
+
+<a href="film12.html"><img src="IMG_9187.jpeg" id="BLUE BEETLE (2023) HD"></a>
+
+<a href="film13.html"><img src="IMG_9188.jpeg" id="BARBIE (2023) HD"></a>
+
+<a href="film14.html"><img src="IMG_9189.jpeg" id="NINJA TURTLES : TEENAGE YEARS (2023) HD"></a>
+
+<a href="film15.html"><img src="IMG_9190.jpeg" id="INDIANA JONES ET LE CADRAN DE LA DESTINÉE (2023) HD"></a>
+
+<a href="film16.html"><img src="IMG_9191.jpeg" id="EN EAUX TRÈS TROUBLES (2023) HD"></a>
+
+
+<a href="film18.html"><img src="IMG_9192.jpeg" id="SOUND OF FREEDOM (2023) HD"></a>
+
+<a href="film19.html"><img src="IMG_9193.jpeg" id=""></a>
+
+
+    
+
+
+
+    
+    
+  </div>
+  <script>
+    function filterImages() {
+      var input, filter, gallery, images, img, id;
+      input = document.getElementById('searchInput');
+      filter = input.value.toUpperCase();
+      gallery = document.getElementById('imageGallery');
+      images = gallery.getElementsByTagName('img');
+
+      for (var i = 0; i < images.length; i++) {
+        img = images[i];
+        id = img.getAttribute('id');
+
+        if (id.toUpperCase().indexOf(filter) > -1) {
+          img.style.display = '';
+        } else {
+          img.style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

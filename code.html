@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accès</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 100px;
+        }
+
+        #errorMessage {
+            color: red;
+        }
+        button{
+                margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entrez le code :</h1>
+    <input type="text" id="codeInput">
+    <button onclick="checkCode()">Valider</button>
+    <h2 id="errorMessage"></h2>
+
+    <script>
+        function checkCode() {
+            var enteredCode = document.getElementById('codeInput').value;
+            var errorMessage = document.getElementById('errorMessage');
+
+            // Remplacez 'votreCodeSecret' par le code que vous souhaitez
+            var codeSecret = '1';
+
+            if (enteredCode === codeSecret) {
+                window.location.href = 'aplio.html';
+            } else {
+                errorMessage.textContent = 'Code incorrect. Veuillez réessayer.';
+            }
+        }
+    </script>
+</body>
+</html>
