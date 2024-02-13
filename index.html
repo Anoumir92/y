@@ -1,26 +1,291 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <style>
-    .header, a{
-    font-size: 2em;
-    text-align: center;
-    margin-top: 200px;
-    list-style: none;
-    text-decoration: none;
-    color: #000;
-}
+    body{
+        background: #000000;
+    }
+    nav{
+        align-items: center;
+        text-align: center;
+    }
+    a, li{
+        text-decoration: none;
+        list-style: none;
+    }
+    .one{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 25px;
+        gap: 10px;
+        position: absolute;
+        top: 0px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    .one a{
+        color: #ffffff;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .tropher{
+        width: 150px;
+    }
+    .two{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        font-size: 25px;
+        gap: 10px;
+        position: absolute;
+        top: 63px;
+        left: 1400px;
+    }
+    .two a{
+        color: #ffffff;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .Player{
+        color: #fbff00;
+    }
+    .home{
+        color: #ff9100;
+    }
+    .disayn-box1{
+        width: 300px;
+        height: 500px;
+        background: #fbff00;
+        position: absolute;
+        top: 250px;
+        border-radius: 20px;
+        left: 1500px;
+    }
+    .disayn-box2{
+        width: 300px;
+        height: 500px;
+        background: #ff9100;
+        position: absolute;
+        top: 250px;
+        border-radius: 20px;
+        left: 90px;
+        z-index: 1;
+    }
+    .fn{
+        width: 150px;
+        position: absolute;
+        z-index: 6;
+        border-radius: 9px;
+        left: 165px;
+        top: 200px;
+    }
+    .unreal{
+        position: absolute;
+        width: 300px;
+        left: 780px;
+        top: 200px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap');
+    .obj{
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 445;
+        font-style: normal;
+        color: #ffffff;
+        position: absolute;
+        left: 790px;
+        top: 470px;
+        font-size: 50px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+    .off{
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        z-index: 7;
+        left: 185px;
+        top: 420px;
+        font-size: 19px;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        gap: 1px;
+    }
+    .off a{
+        text-decoration: none;
+        list-style: none;
+        color: #ffffff;
+
+    }
+    .v-bucks{
+
+    }
+    .live{
+        width: 300px;
+        position: absolute;
+        left: 1510px;
+        top: 90px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+    .li li{
+        text-align: center;
+        font-size: 17px;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .li{
+        position: absolute;
+        left: 1480px;
+        top: 320px;
+    }
+    .red{
+        color: #ff0000;
+    }
+    .bl{
+        color: #6504c0;
+    }
+    .Pl{
+        color: #000000;
+    }
+    .Tou{
+        color: #000000;
+    }
+    .tik{
+        color: #181427;
+    }
+    .ranked{
+        position: absolute;
+        top: 570px;
+        left: 870px;
+        font-size: 20px;
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .ranked li{
+        color: #ffffff;
+        text-align: center;
+    }
+    .t{
+        width: 200px;
+        position: absolute;
+        left: 500px;
+        top: 350px;
+        transform: scaleZ(2);
+    }
+    .smg{
+        width: 150px;
+        position: absolute;
+        left: 450px;
+        top: 600px;
+    }
+    .vo{
+        width: 250px;
+        position: absolute;
+        left: 1150px;
+        top: 350px;
+    }
+    .tp{
+        width: 200px;
+        position: absolute;
+        left: 1200px;
+        top: 590px;
+    }
 </style>
 <body>
-    <div class="header">
-        <a href="loading.html">(:)</a>
-    </div>
-</body>
+    <header>
+        <nav>
+            <div class="content">
+            <ul class="one">
+                <a href="#"><li><img class="tropher" src="https://clipground.com/images/trophy-png-image-5.png" alt="Tropher Jaune"></li></a>
+                <a href="#"><li class="home">Home</li></a>
+                <a href="#"><li>Search</li></a>
+            </ul>
+            <ul class="two">
+                <a href="#"><li><span class="Player">Joueur</span></li></a>
+                <a href="#"><li>4k</li></a>
+                <a href="#"><li>Map</li></a>
+                <a href="#"><li>Palmares</li></a>
+                <a href="#"><li>Réseau</li></a>
+            </ul>
+            </div>
+        </nav>
+    </header>
 
+        <div class="disayn-box1">
+
+        </div>
+        <div class="disayn-box2">
+
+        </div>
+        <img class="fn" src="https://cdn1.epicgames.com/offer/fn/28BR_C5S1_EGS_Launcher_Blade_1200x1600_1200x1600-3f46471fa4a17295321497cdb69aa06d" alt="">
+        <img class="unreal" src="https://boostingmarket.com/images/games/fortnite-boost/packs/fortnite-rank-boost.webp" alt="">
+        <h1 class="obj">1ᵉʳᵉ OBJECTIF</h1>
+
+        <div class="off">
+            <a href="#"><li>JOUEUR 4K</li></a>
+            <a href="#"><li><i class="fa-brands fa-youtube " style="color: #ff0000;"></i> Anoumir</li></a>
+            <a href="#"><li><i class="fa-brands fa-tiktok " style="color: #181427;"></i> Mouloud</li></a>
+            <a href="#"><li>Nems</li></a>
+            <a href="#"><li>Karoub</li></a>
+            <a href="#"><li>Wilo</li></a>
+            <a href="#"><li>Amirツ</li></a>
+            <a href="#"><li>BUILD 4K</li></a>
+            <a href="#"><li><i class="fa-brands fa-youtube " style="color: #ff0000;"></i> Anoumir</li></a>
+            <a href="#"><li>...</li></a>
+            <a href="#"><li>...</li></a>
+            <a href="#"><li>...</li></a>
+            <a href="#"><li>...</li></a>
+            <a href="#"><li>...</li></a>
+        </div>
+        <img class="live" src="https://pnghq.com/wp-content/uploads/full-hd-live-icon-pngs-free-download-now.png" alt="">
+        <ul class="li">
+            <li class="Pl">Chaine 4k Tv</li>
+            <li class="red"><i class="fa-brands fa-youtube " style="color: #ff0000;"></i> Mardi 18h - 19h30</li>
+            <li class="bl"><i class="fa-brands fa-twitch " style="color: #6504c0;"></i> Mercredi 17h - 18h30h</li>
+            <li class="bl"><i class="fa-brands fa-twitch " style="color: #6504c0;"></i> Vendredi 16h - 18h30h</li>
+            <li class="red"><i class="fa-brands fa-youtube " style="color: #ff0000;"></i> Samedi 17h30 - 19h30</li>
+            <li class="red"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Dimanche 15h30 - 17h30</li>
+            <a href="#"><li class="Tou">Vidéo Anoumir4k <i class="fa-brands fa-youtube" style="color: #ff0000;"></i></li></a>
+            <li class="red">Mardi 17h <i class="fa-brands fa-youtube" style="color: #ff0000;"></i></li>
+            <li class="tik">Mardi 18h <i class="fa-brands fa-tiktok" style="color: #181427;"></i></li>
+            <li class="red">Vendredi 16h <i class="fa-brands fa-youtube" style="color: #ff0000;"></i></li>
+            <li class="tik">Vendredi 19h <i class="fa-brands fa-tiktok" style="color: #181427;"></i></li>
+            <li class="tik">Dimanche 15h <i class="fa-brands fa-tiktok" style="color: #181427;"></i></li>
+            <li>INFO</li>
+            <li class="red">Montage <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Anoumir4k</li>
+            <li class="tik">Montage <i class="fa-brands fa-tiktok" style="color: #181427;"></i> Anoumir4k</li>
+            <li class="red">Concept Vidéo <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Team 4k</li>
+            <li class="tik">Concept Vidéo <i class="fa-brands fa-tiktok" style="color: #181427;"></i> Anoumir4k</li>
+            <li class="red">Propriétair chaine <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Team 4k</li>
+            <li class="tik">Propriétair chaine <i class="fa-brands fa-tiktok" style="color: #181427;"></i> Anoumir4k</li>
+        </ul>
+        <div class="ranked">
+            <li>Anoumir4k D2</li>
+            <li>Mouloud D2</li>
+            <li>Wilo D2</li>
+            <li>Karoub D3</li>
+            <li>Nems D2</li>
+            <li>Amirツ D2</li>
+        </div>
+        <img class="t" src="https://static.wikia.nocookie.net/fortnite/images/d/d3/Fusil_d%27assault.png/revision/latest?cb=20200601131406&path-prefix=fr" alt="">
+        <img class="smg" src="https://static.wikia.nocookie.net/fortnite/images/7/78/Submachine_Gun_-_Weapon_-_Fortnite.png/revision/latest?cb=20200303010014" alt="">
+        <img class="vo" src="https://static1.millenium.org/articles/9/32/71/59/@/942504-sniper-lourd-article_m-1.png" alt="">
+        <img class="tp" src="https://static.wikia.nocookie.net/fortnite/images/0/07/Lance_Roquette_2.png/revision/latest?cb=20200914082554&path-prefix=fr" alt="">
+</body>
 </html>
